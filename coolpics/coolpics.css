@@ -2,16 +2,15 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
 }
 
 header {
     background-color: rgb(116, 42, 185);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+h1 {
+    font-size: 50px;
 }
 
 ul {
@@ -20,11 +19,15 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    margin: 0 20%;
 }
 
 li {
     padding: 1rem;
+}
+
+main {
+    background-color: lightgray;
 }
 
 h1, h2 {
@@ -32,8 +35,50 @@ h1, h2 {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    border: 5px solid white;
+h2 {
+    color: black;
+    padding-top: 2rem;
+    font-size: 30px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0 20%;
+    place-items: center; /* Centering the images in the grid*/
+}
+
+img {
+    max-width: 100%;
+    box-shadow: 5px 5px gray;
+    border: 5px solid white;
+    height: 225px;
+    width: 225px;
+    object-fit: cover; /* make it so it doesn't distort the pics*/
+}
+
+footer {
+    background-color: rgb(116, 42, 185);
+    padding: 1rem;
+}
+
+ footer p {
+    margin: 0 20%;
+ }
+
+@media screen and (max-width: 1550px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+ @media screen and (max-width: 1100px) {
+    ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+ }
