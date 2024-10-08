@@ -49,6 +49,10 @@ h2 {
     place-items: center; /* Centering the images in the grid*/
 }
 
+figure {
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     box-shadow: 5px 5px gray;
