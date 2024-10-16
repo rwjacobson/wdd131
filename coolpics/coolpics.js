@@ -58,3 +58,10 @@ function viewerTemplate(pic, alt) {
     closeButton.addEventListener("click", closeViewer);
 }
 
+const gallery = document.querySelector(".gallery")
+gallery.addEventListener("click", viewHandler)
+
+function closeViewer() {
+    const vieverDiv = document.querySelector(".viewer")
+    vieverDiv.remove()
+}
