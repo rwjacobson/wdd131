@@ -3,16 +3,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+    margin: 0;
 }
 
 header {
     background-color: rgb(116, 42, 185);
+    text-align: center;
 }
 
 h1 {
     font-size: 50px;
+    margin-top: 0;
 }
 
+#menu {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 nav {
     padding: 0;
     display: flex;
@@ -20,10 +31,12 @@ nav {
     justify-content: space-around;
     margin: 0 20%;
 }
-
 a {
     padding: 1rem;
     color: aliceblue;
+}
+.hide {
+    display: none;
 }
 
 main {
@@ -34,7 +47,6 @@ h1, h2 {
     font-family: mooli;
     text-align: center;
 }
-
 h2 {
     color: black;
     padding-top: 2rem;
@@ -48,11 +60,10 @@ h2 {
     margin: 0 20%;
     place-items: center; /* Centering the images in the grid*/
 }
-
 figure {
     width: 100%;
+    text-align: center;
 }
-
 img {
     max-width: 100%;
     box-shadow: 5px 5px gray;
@@ -66,18 +77,39 @@ footer {
     background-color: rgb(116, 42, 185);
     padding: 1rem;
 }
-
  footer p {
     margin: 0 20%;
  }
 
-@media screen and (min-width: 1700px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
+ @media screen and (max-width: 1000px) {
+    .viewer {
+        /** setting this element to fixed **/
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: grid;
+        grid-template-columns: 1fr;
     }
-}
-
- @media screen and (max-width: 763px) {
+    .close-viewer {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: end;
+        justify-self: center;
+    }
+    .lImg {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        max-height: 100%;
+    }
+    #menu {
+        display: none;
+    }
     nav {
         flex-direction: column;
     }
@@ -85,7 +117,19 @@ footer {
         display: flex;
         justify-content: center;
     }
+    .hide {
+        display: block;
+    }
     .gallery {
         grid-template-columns: 1fr;
     }
  }
+
+ @media screen and (min-width: 1700px) {
+    .hide {
+        display: block;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
