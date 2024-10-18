@@ -1,0 +1,36 @@
+/* Russian Viotlet: #290849
+Gold: #FFD524
+Xanthous: #ECB602 */
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+h1, h2 {
+    font-family: "Ribeye", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h1 {
+    color: #290849;
+}
+
+nav {
+    background-color: #290849;
+}
+
+a {
+    color: #ECB602;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ECB602;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
