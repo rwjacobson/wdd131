@@ -8,29 +8,76 @@ h1, h2 {
     font-family: "Ribeye", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 70px;
 }
-
 h1 {
     color: #290849;
 }
 
 nav {
     background-color: #290849;
+    border-top: 8px solid #ECB602;
+    border-bottom: 8px solid #ECB602;
 }
-
+ul {
+    padding: 3% 0%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end;
+    justify-items: center;
+    margin: 0 10%;
+}
 a {
     color: #ECB602;
+    font-size: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 3%;
+    padding: 5% 3%;
+}
+#rating {
+    justify-items: end;
+}
+#display {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3%;
+}
+#bookTitle {
+    grid-column: 1/2;
+}
+#bookImg {
+    grid-column: 1/2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#description {
+    grid-column: 1/2;
+}
+#filter {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    z-index: 1;
+    padding: 8px;
+}
+#filterBack {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border: 5px solid #ECB602;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 35px;
     color: #ECB602;
 }
-
 p {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
 }
