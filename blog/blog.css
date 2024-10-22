@@ -52,21 +52,22 @@ main {
     padding: 5% 3%;
 }
 
-#book {
+.book {
    display: grid;
    grid-template-columns: 1fr 2fr;
    grid-column-gap: 3%;
 }
-#date, #age, #genre, #star {
+article {
     grid-column: 1/2;
     justify-self: end;
+    justify-items: end;
 }
-#bookTitle {
+.bookTitle {
     grid-column: 2/3;
     grid-row: 1/3;
     padding-left: 3%;
 }
-#bookImg {
+.bookImg {
     grid-column: 2/3;
     grid-row: 3/7;
     display: block;
@@ -74,12 +75,12 @@ main {
     margin-right: auto;
     width: 50%;
 }
-#description {
+.description {
     grid-column: 2/3;
     grid-row: 7/8;
     padding-left: 3%;
 }
-#rateLine {
+.rateLine {
     border-left: 5px solid #290849;
     grid-column: 2/3;
     grid-row: 1/8;
