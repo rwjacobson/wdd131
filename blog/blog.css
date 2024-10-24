@@ -8,15 +8,16 @@ h1, h2 {
     font-family: "Ribeye", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 70px;
 }
 h1 {
     color: #290849;
     text-align: center;
+    font-size: 70px;
 }
 h2 {
     font-size: 35px;
     color: #ECB602;
+    margin: 0 1rem;
 }
 p {
     font-family: "Inter", sans-serif;
@@ -41,7 +42,8 @@ ul {
 }
 a {
     color: #290849;
-    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 27px;
     text-decoration: none;
 }
 
@@ -51,16 +53,26 @@ main {
     grid-gap: 3%;
     padding: 5% 3%;
 }
-
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 3%;
+}
 .book {
    display: grid;
-   grid-template-columns: 1fr 2fr;
-   grid-column-gap: 3%;
+   grid-template-columns: 1fr;
 }
 article {
     grid-column: 1/2;
     justify-self: end;
     justify-items: end;
+}
+.date {
+    font-size: 27px;
+}
+.date, .age, .genre, .star {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 .bookTitle {
     grid-column: 2/3;
@@ -79,6 +91,7 @@ article {
     grid-column: 2/3;
     grid-row: 7/8;
     padding-left: 3%;
+    margin-left: 1rem;
 }
 .rateLine {
     border-left: 5px solid #290849;
