@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="creditcard.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>Creditcard</title>
 </head>
 <body>
@@ -14,17 +15,17 @@
             <label for="card-number" id="labelNum">CARD NUMBER</label>
             <input type="number" id="inputNum" placeholder="1234 5678 9012 3456" lang="16" required>
 
-            <label for="card-holder" id="labelHolder">CARD HOLDER</label>
-            <input type="text" id="inputHolder" placeholder="e.g. John Doe" required>
+            <label for="name" id="labelName">CARD HOLDER</label>
+            <input type="text" id="inputName" placeholder="e.g. John Doe" required>
 
             <label for="expiration" id="exp">EXPIRATION</label>
-            <input type="number" id="mounth" placeholder="MM" required>
-            <input type="number" id="year" placeholder="YY" required>
+            <input type="number" id="mounth" placeholder="MM" lang="2" required>
+            <input type="number" id="year" placeholder="YY" lang="4" required>
         </div>
         <div id="formBack">
             <div id="blackLine"></div>
             <label for="cvc/cvv">CVC/CVV</label>
-            <input type="number" id="cvc" required>
+            <input type="number" id="cvc" placeholder="xxx" lang="3" required>
         </div>
         <button>Submit</button>
     </form>
