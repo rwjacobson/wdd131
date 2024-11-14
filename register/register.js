@@ -1,4 +1,4 @@
-import { participantTemplate } from './templates.mjs';
+import { participantTemplate, successTemplate } from './templates.mjs';
 console.log(participantTemplate())
 let num = 1;
 
