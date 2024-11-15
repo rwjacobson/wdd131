@@ -27,13 +27,15 @@ h1 {
 
 form {
     display: flex;
+    flex-direction: row;
     border: 5px solid rgb(29, 28, 28);
     border-radius: 8px;
+    margin: 0 4%;
 }
 input {
     flex-grow: 1;
-    font-size: 3.2rem;
-    padding-left: 2rem;
+    font-size: 2rem;
+    padding-left: 10px;
 }
  button {
     width: 70px;
@@ -43,18 +45,23 @@ input {
  #recipeInfo {
     display: flex;
     flex-direction: column;
-    border: 7px solid rgb(29, 28, 28);
+    border: 5px solid rgb(29, 28, 28);
     border-radius: 8px;
-    margin: 5% 2rem;
+    margin: 5% 4%;
  }
  #potato {
     padding: 8%;
  }
- p {
-    border: 3px solid gray;
-    font-size: 2rem;
+#tags {
     align-self: flex-start;
     margin-left: 8%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+ }
+ #tags p {
+    border: 3px solid gray;
+    font-size: 2rem;
     margin-top: -5%;
     padding: .5rem 1rem;
  }
@@ -67,6 +74,9 @@ input {
  .rating {
     font-size: 2.5em;
     margin: -3.5% 0 7% 8%;
+ }
+ #description {
+    display: none;
  }
 
  .social {
