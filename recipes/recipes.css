@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavivanar&display=swap');
+
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica,sans-serif;
+}
+h1, h2 {
+    font-family: "Kavivanar", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+img {
+	max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+#logo {
+    width: 20%;
+}
+h1 {
+    font-size: 7rem;
+}
+
+form {
+    display: flex;
+    margin: 0 2rem;
+    border: 5px solid rgb(29, 28, 28);
+    border-radius: 8px;
+}
+
+input {
+    flex-grow: 1;
+    font-size: 3.5rem;
+    padding: 0 2rem;
+}
+ button {
+    width: 10%;
+    cursor: pointer;
+ }
+
+ #recipeInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 2rem;
+ }
