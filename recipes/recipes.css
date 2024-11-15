@@ -22,28 +22,64 @@ header {
     width: 20%;
 }
 h1 {
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 form {
     display: flex;
-    margin: 0 2rem;
     border: 5px solid rgb(29, 28, 28);
     border-radius: 8px;
 }
-
 input {
     flex-grow: 1;
-    font-size: 3.5rem;
-    padding: 0 2rem;
+    font-size: 3.2rem;
+    padding-left: 2rem;
 }
  button {
-    width: 10%;
+    width: 70px;
     cursor: pointer;
  }
 
  #recipeInfo {
     display: flex;
     flex-direction: column;
+    border: 7px solid rgb(29, 28, 28);
+    border-radius: 8px;
     margin: 5% 2rem;
+ }
+ #potato {
+    padding: 8%;
+ }
+ p {
+    border: 3px solid gray;
+    font-size: 2rem;
+    align-self: flex-start;
+    margin-left: 8%;
+    margin-top: -5%;
+    padding: .5rem 1rem;
+ }
+ h2 {
+    font-size: 2.5em;
+    margin-left: 8%;
+    margin-top: 0;
+    color: rgb(14, 131, 226);
+ }
+ .rating {
+    font-size: 2.5em;
+    margin: -3.5% 0 7% 8%;
+ }
+
+ .social {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+ }
+ a img {
+    width: 100px;
+ }
+
+ @media screen and (min-width: 1080px) {
+    
  }
