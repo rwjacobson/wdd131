@@ -19,7 +19,7 @@ header {
     align-items: baseline;
 }
 #logo {
-    width: 20%;
+    width: 200px;
 }
 h1 {
     font-size: 6rem;
@@ -89,9 +89,52 @@ input {
  a img {
     width: 100px;
  }
+ .link {
+    text-decoration: none;
+    color: rgb(14, 131, 226);
+    font-size: 1.5rem;
+ }
 
  @media screen and (min-width: 1080px) {
-    body {
-        background-color: blueviolet;
+    #recipeInfo {
+        flex-direction: row;
+    }
+    #potato {
+        width: 40%;
+        padding: 3%;
+    }
+    #sideInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 3%;
+    }
+    #tags {
+        margin: 0;
+    }
+    #tags p {
+        margin: 0;
+    } 
+    h2 {
+        margin: 0;
+        padding-top: 40px;
+    }
+    .rating {
+        margin: 0;
+        align-self: flex-start;
+    }
+    #description {
+        display: inline;
+        font-size: 2rem;
+        padding-top: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: -250px;
     }
  }
