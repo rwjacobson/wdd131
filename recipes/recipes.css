@@ -143,6 +143,6 @@ input {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-end;
-        margin-top: -250px;
+        margin-top: -10%;
     }
  }
