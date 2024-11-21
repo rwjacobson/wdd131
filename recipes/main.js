@@ -33,10 +33,14 @@ const recipeTemplate = (recipe) => {
 }
 
 function tagsTemplate(tags) {
+
+    const elementTags = document.getElementById("tags");
 	// loop through the tags list and transform the strings to HTML
-    const html = tags.array.forEach(element => {
-        pass
-    });
+    const html = tags.forEach(item => {
+        const listItem = document.createElement("p");
+        listItem.textContent = item;
+        elementTags.appendChild(listItem);
+      });
 	return html;
 }
 
