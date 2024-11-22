@@ -14,7 +14,7 @@ const recipeTemplate = (recipe) => {
     return `<img id="potato" src="${recipe.image}" alt="roasted-potatoes">
             <div id="sideInfo">
                 <div id="tags">
-                    <p>${tagsTemplate(recipe.tags)}</p>
+                    ${tagsTemplate(recipe.tags)}
                 </div>
                 <h2>${recipe.name}</h2>
                 <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
@@ -25,14 +25,12 @@ const recipeTemplate = (recipe) => {
 }
 
 function tagsTemplate(tags) {
+    let html = []
 
-    const elementTags = document.getElementById("tags");
-	// loop through the tags list and transform the strings to HTML
-    const html = tags.forEach(item => {
-        const listItem = document.createElement("p");
-        listItem.textContent = item;
-        elementTags.appendChild(listItem);
-      });
+    // loop through the tags list and transform the strings to HTML
+    tags.forEach(element => {
+        html.push(`<p>${element}</p>`);
+    });
 	return html;
 }
 
@@ -77,3 +75,27 @@ function init() {
   renderRecipes([recipe]);
 }
 init();
+
+const filterRecipes = (query) => {
+    const filterList = recipes.filter(item => item.name.includes(query) || item.description.includes(query) || recipe.tags.find((item) => item.includes(query)) || recipe.recipeIngredient.find((item) => item.includes(query)))
+    return filterList.sort()
+}
+
+const searchHandler = (event) => {
+    event.preventDefault()
+
+    const searchInfo = document.querySelector("input").value.toLowerCase();
+    const filtered = filterRecipes(searchInfo)
+
+    filtered.forEach(item => {
+        const info = document.getElementById("recipeInfo");
+        // Set the HTML strings as the innerHTML of our output element.
+        info.innerHTML = recipeTemplate(item); 
+    })
+
+}
+
+const searchInfo = document.querySelector("input").value.toLowerCase();
+const button = document.querySelector("form");
+
+button.addEventListener("sumit", searchHandler);

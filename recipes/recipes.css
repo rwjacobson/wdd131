@@ -76,8 +76,8 @@ input {
     color: rgb(14, 131, 226);
  }
  .rating {
-    font-size: 2.5em;
-    margin: -30px 0 8% 8%;
+    font-size: 1.5em;
+    margin: -30px 0 8% 3.5%;
  }
  #description {
     display: none;
