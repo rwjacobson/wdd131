@@ -20,7 +20,7 @@ const recipeTemplate = (recipe) => {
                 <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
                     ${ratingTemplate(recipe.rating)}
                 </span>
-                <p id="description">${recipe.recipeInstructions}</p>
+                <p id="description">${recipe.description}</p>
             </div>`
 }
 
