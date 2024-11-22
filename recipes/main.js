@@ -78,7 +78,7 @@ init();
 
 const filterRecipes = (query) => {
     const filterList = recipes.filter(item => item.name.includes(query) || item.description.includes(query) || recipe.tags.find((item) => item.includes(query)) || recipe.recipeIngredient.find((item) => item.includes(query)))
-    return filterList.sort()
+    return filterList.sort((a, b) => a.name - b.name);
 }
 
 const searchHandler = (event) => {
@@ -95,7 +95,6 @@ const searchHandler = (event) => {
 
 }
 
-const searchInfo = document.querySelector("input").value.toLowerCase();
 const button = document.querySelector("form");
 
 button.addEventListener("sumit", searchHandler);
