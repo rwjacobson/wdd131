@@ -13,7 +13,7 @@ h1, h2 {
 }
 p, a {
     font-family: "Neuton", serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 a {
     text-decoration: none;
@@ -87,11 +87,11 @@ footer {
 }
 footer a, footer p {
     color: #EAE4B0;
-    font-size: 15px;
+    font-size: 10px;
 }
 /* home main */
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #EAE4B0;
     background-color: #462D52;
     text-align: center;
