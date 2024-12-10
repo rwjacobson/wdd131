@@ -28,7 +28,7 @@ nav {
     grid-template-columns: 1fr 5fr 1fr 1fr;
     gap: 5px;
 }
-img {
+#logo {
     width: 50px;
     padding: 15px;
     border-bottom: 2px solid #D1C340;
@@ -90,6 +90,9 @@ footer a, footer p {
     font-size: 10px;
 }
 /* home main */
+#homeImg {
+    width: 100%;
+}
 h2 {
     font-size: 20px;
     color: #EAE4B0;
@@ -168,7 +171,7 @@ main p {
 }
 @media screen and (min-width: 1200px) {
     /*header*/
-    img {
+    #logo {
         width: 60px;
     }
     h1 {
