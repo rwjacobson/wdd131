@@ -13,7 +13,7 @@ h1, h2 {
 }
 p, a {
     font-family: "Neuton", serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 a {
     text-decoration: none;
@@ -150,4 +150,21 @@ main p {
 .homeLeft {
     grid-column: 1/2;
     grid-row: 6/9;
+}
+
+@media screen and (min-width: 708px) {
+    /*header*/
+    img {
+        width: 60px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    #pageLink {
+        width: 85px;
+        height: 85px;
+    }
+    .headBox1, .headBox2 {
+        height: 83px;
+    }
 }
