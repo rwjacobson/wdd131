@@ -152,7 +152,7 @@ main p {
     grid-row: 6/9;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     /*header*/
     img {
         width: 60px;
@@ -166,5 +166,29 @@ main p {
     }
     .headBox1, .headBox2 {
         height: 83px;
+    }
+    /*home main*/
+    main {
+        grid-template-columns: 1fr 2fr  1fr 2fr;
+        gap: 15px;
+    }
+    .conPercy, .percy1, .percy2, .percy3 {
+        grid-column: 3/5;
+    }
+    .conPercy {
+        grid-row: 1/2;
+    }
+    .percy1 {
+        grid-row: 2/3;
+    }
+    .percy2 {
+        grid-row: 3/4;
+    }
+    .percy3 {
+        grid-row: 4/5;
+    }
+    .homeLeft {
+        grid-column: 3/4;
+        grid-row: 2/5;
     }
 }
