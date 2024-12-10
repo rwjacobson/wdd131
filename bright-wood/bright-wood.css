@@ -13,12 +13,11 @@ h1, h2 {
 }
 p, a {
     font-family: "Neuton", serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 a {
     text-decoration: none;
 }
-
 /* Header */
 header {
     border-bottom: 2px solid #D1C340;
@@ -88,14 +87,15 @@ footer {
 }
 footer a, footer p {
     color: #EAE4B0;
-    font-size: 20px;
+    font-size: 15px;
 }
 /* home main */
 h2 {
+    font-size: 25px;
     color: #EAE4B0;
     background-color: #462D52;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     margin: 0 80px;
 }
 main {
