@@ -185,7 +185,7 @@ main p {
         height: 83px;
     }
     /*home main*/
-    main {
+    #homeMain {
         grid-template-columns: 1fr 2fr  1fr 2fr;
         gap: 15px;
     }
