@@ -1,7 +1,7 @@
 //Select the select elemnt with an ID of 'mode'
 let select = document.getElementById("mode");
  
-// Define the evenht handler function
+// Define the event handler function
 function changeTheme() {
     const event = mode.value;
     if (event === "dark") {
