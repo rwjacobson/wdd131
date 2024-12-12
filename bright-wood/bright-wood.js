@@ -1,4 +1,4 @@
-import quotes from './quotes';
+import quotes from './quotes.mjs';
 
 let select = document.getElementById("theme");
 
@@ -18,14 +18,14 @@ const replaceContent = (list) => {
     const quote1 = document.querySelector(".quote1");
     const quote2 = document.querySelector(".quote2");
     const quote3 = document.querySelector(".quote3");
-    const quote4 = document.querySelector(".quote4")
-    const quote5 = document.querySelector("quote5");
+    const quote4 = document.querySelector(".quote4");
+    const quote5 = document.querySelector(".quote5");
 
     quote1.textContent = list.quote1
     quote2.textContent = list.quote2
     quote3.textContent = list.quote3
     quote4.textContent = list.quote4
     quote5.textContent = list.quote5
-
-    console.log("it worked");
 }
+
+document.getElementById("theme").addEventListener("change", changeTheme);
