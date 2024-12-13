@@ -240,6 +240,7 @@ main p {
     /*theme mian*/
     #themeMain p {
         font-size: 35px;
+        height: 50px;
 
     }
     #themedBox {
@@ -248,7 +249,7 @@ main p {
     }
     #imgQuote {
         display: inline;
-        width: 80%;
+        width: 40%;
         padding: 25px;
         border-radius: 50px;
     }
