@@ -20,12 +20,16 @@ const replaceContent = (list) => {
     const quote3 = document.querySelector(".quote3");
     const quote4 = document.querySelector(".quote4");
     const quote5 = document.querySelector(".quote5");
+    const img = document.getElementById("imgQuote");
+    console.log(img)
+    console.log(list.img)
 
     quote1.textContent = list.quote1
     quote2.textContent = list.quote2
     quote3.textContent = list.quote3
     quote4.textContent = list.quote4
     quote5.textContent = list.quote5
+    img.setAttribute("src", list.img)
 }
 
 document.getElementById("theme").addEventListener("change", changeTheme);
