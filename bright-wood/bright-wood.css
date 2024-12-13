@@ -239,7 +239,6 @@ main p {
     }
     /*theme mian*/
     #themeMain p {
-        font-size: 30px;
         max-height: 100px;
 
     }
@@ -249,7 +248,7 @@ main p {
     }
     #imgQuote {
         display: inline;
-        width: 30%;
+        width: 20%;
         padding: 25px;
         border-radius: 50px;
     }
