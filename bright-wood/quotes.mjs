@@ -42,4 +42,16 @@ export const quotes = [
     }
 ]
 
+export const harry = [
+    "“Things we lose have a way of coming back to us in the end, if not always in the way we expect.” ― Luna Lovegood, Harry Potter and the Order of the Phoenix",
+    "“I am what I am, an' I'm not ashamed. 'Never be ashamed,' my ol' dad used ter say, 'there's some who'll hold it against you, but they're not worth botherin' with.'” — Rubeus Hagrid, Harry Potter and the Goblet of Fire",
+    "“Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?” ― Albus Dumbledore, Harry Potter and the Deathly Hallows"
+]
+
+export const percy = [
+    "“There is always a way out for those clever enough to find it.” – Percy Jackson and The Titan’s Curse",
+    "“Families are messy. Immortal families are eternally messy. Sometimes the best we can do is to remind each other that we’re related for better or for worse.” – Percy Jackson and The Sea of Monsters",
+    "“Getting something and having the wits to use it…those are two different things.” – Percy Jackson and The Battle of the Labyrint"
+]
+
 export default quotes;
