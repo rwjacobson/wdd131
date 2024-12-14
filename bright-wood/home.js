@@ -2,7 +2,6 @@ import {harry, percy} from './quotes.mjs';
 
 function loopThroughText(id, textArray, delay, button) {
     let currentIndex = 0;
-    console.log(textArray)
   
     const intervalId = setInterval(() => {
       // Display the current text
@@ -13,7 +12,7 @@ function loopThroughText(id, textArray, delay, button) {
   
     }, delay);
   
-    // Optionally, provide a way to stop the loop
+    // provide a way to stop the loop
     const stopButton = document.getElementById(button);
     stopButton.addEventListener("click", () => {
       clearInterval(intervalId); 
